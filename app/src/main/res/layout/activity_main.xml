@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Connection"
+        android:layout_centerInParent="true"
+        android:onClick="openBluetoothActivity"/>
+
+    <Button
+        android:id="@+id/btnControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control"
+        android:layout_below="@id/btnBluetooth"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openControlActivity"/>
+
+    <Button
+        android:id="@+id/btnTerminal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terminal"
+        android:layout_below="@id/btnControl"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openTerminalActivity"/>
+
+</RelativeLayout>
